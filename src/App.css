@@ -158,6 +158,11 @@ header {
   text-align: center;
 }
 
+.highlighted-text-header {
+  color: #6cadfb;
+  font-weight: bold;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .container {
@@ -191,7 +196,7 @@ header {
   }
 
   .header-title {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     text-align: center;
   }
   .header-text {

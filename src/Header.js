@@ -21,7 +21,8 @@ function Header() {
           </div>
           <div className="header-content">
             <h1 className="header-title">
-              unleash the power of dogecoin With dogemax, your AI companion
+              unleash the power of dogecoin With <b className="highlighted-text-header"> dogemax</b> , your AI
+              companion
             </h1>
             <p className="header-text">
               Your fun and knowledgeable guide to exploring and thriving in the
