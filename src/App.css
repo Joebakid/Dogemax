@@ -1,0 +1,183 @@
+/* Logo and general fonts */
+@import url("https://fonts.googleapis.com/css2?family=Revalia&family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Reset and General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #030133;
+  background-image: url("/public/img/spiral.png");
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* Navbar Styles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Revalia", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.list-nav-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.list-nav-container li a {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.list-nav-container li a:hover {
+  color: #6cadfb;
+}
+
+.ask-link {
+  text-decoration: none;
+  color: white;
+  background: #6cadfb;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: font-weight 0.2s ease, background 0.3s ease;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.ask-link:hover {
+  background: #6a96cc;
+  /* font-weight: bold; */
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
+/* HEADER */
+
+section {
+  padding: 20px 0;
+}
+
+header {
+  height: 100vh;
+}
+
+.memecoin-dogemax {
+  margin-left: 40px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.header-title {
+  font-size: 3rem;
+  text-align: center;
+}
+.header-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffffb2;
+}
+
+.unique {
+  padding: 10px 0;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  color: #030133;
+  background: #6cadfb;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  transition: font-weight 0.2s ease, background 0.3s ease;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .list-nav-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #030133;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+  }
+
+  .list-nav-container.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .ask-link {
+    display: none;
+  }
+}
