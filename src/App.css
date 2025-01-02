@@ -156,6 +156,11 @@ header {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
   .list-nav-container {
     display: none;
     flex-direction: column;
