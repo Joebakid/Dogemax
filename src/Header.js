@@ -1,13 +1,6 @@
 import React from "react";
 
-function Header() {
-  function Btn({ text }) {
-    return (
-      <a className="btn" href="btn">
-        {text}
-      </a>
-    );
-  }
+function Header({ Btn }) {
   return (
     <header>
       <div className="container">
@@ -21,7 +14,8 @@ function Header() {
           </div>
           <div className="header-content">
             <h1 className="header-title">
-              unleash the power of dogecoin With <b className="highlighted-text-header"> dogemax</b> , your AI
+              unleash the power of dogecoin With{" "}
+              <b className="highlighted-text-header"> dogemax</b> , your AI
               companion
             </h1>
             <p className="header-text">
