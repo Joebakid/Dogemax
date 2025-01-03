@@ -12,39 +12,41 @@ function More({ Card }) {
 
   useEffect(() => {
     const context = gsap.context(() => {
-      // Animate title
+      // Animate title with fade-in effect
       gsap.fromTo(
         ".more-title",
-        { opacity: 0, y: -50 },
+        { opacity: 0, y: -100 },
         {
           opacity: 1,
           y: 0,
-          duration: 1,
-          ease: "power2.out",
+          duration: 1.5,
+          ease: "power3.out",
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top 80%",
+            start: "bottom 75%",
             end: "top 50%",
-            scrub: true,
+            scrub: 1,
+            toggleActions: "play none none reverse",
           },
         }
       );
 
-      // Animate cards
+      // Animate cards with a fade-up effect and staggered animation
       gsap.fromTo(
         ".more-content > div",
         { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
-          duration: 1,
-          ease: "power2.out",
-          stagger: 0.2,
+          duration: 3,
+          ease: "power3.out",
+          stagger: 0.3,
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top 75%",
+            start: "bottom 75%",
             end: "top 50%",
-            scrub: true,
+            scrub: 1,
+            toggleActions: "play none none reverse",
           },
         }
       );

@@ -24,7 +24,7 @@ function WhatIsDogemax() {
     tl.fromTo(
       content,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      { opacity: 1, y: 0, duration: 3, ease: "power2.out" }
     );
 
     return () => {
