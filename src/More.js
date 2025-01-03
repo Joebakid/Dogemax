@@ -19,12 +19,12 @@ function More({ Card }) {
         {
           opacity: 1,
           y: 0,
-          duration: 1.5,
+          duration: 3,
           ease: "power3.out",
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "bottom 75%",
-            end: "top 50%",
+            start: "top 80%",
+            end: "top 30%",
             scrub: 1,
             toggleActions: "play none none reverse",
           },
@@ -43,8 +43,8 @@ function More({ Card }) {
           stagger: 0.3,
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "bottom 75%",
-            end: "top 50%",
+            start: "top 80%",
+            end: "top 30%",
             scrub: 1,
             toggleActions: "play none none reverse",
           },
