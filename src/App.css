@@ -17,14 +17,13 @@ body {
   background-image: url("/public/img/spiral.png");
 }
 
- 
 /* Initially hide elements */
 .header-title,
 .header-text,
 .btn-content,
 .memecoin-dogemax,
 .unique {
- opacity: 0;
+  opacity: 0;
 }
 
 .container {
@@ -123,7 +122,7 @@ nav a {
 /* HEADER */
 
 section {
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 header {
@@ -410,6 +409,10 @@ footer p {
   }
 
   .ChatWithDogeMax-ttile-text {
+    text-align: center;
+  }
+
+  .more-title {
     text-align: center;
   }
 }
