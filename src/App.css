@@ -17,6 +17,16 @@ body {
   background-image: url("/public/img/spiral.png");
 }
 
+ 
+/* Initially hide elements */
+.header-title,
+.header-text,
+.btn-content,
+.memecoin-dogemax,
+.unique {
+ opacity: 0;
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
