@@ -60,8 +60,7 @@ function Header({ Btn }) {
               companion
             </h1>
             <p className="header-text">
-              Your fun and knowledgeable guide to exploring and thriving in the
-              Dogecoin ecosystem
+             Your fun, knowledgeable guide to exploring and thriving in Doge Ecosystem
             </p>
           </div>
           <div className="unique">
