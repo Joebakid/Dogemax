@@ -39,6 +39,12 @@ function App() {
       <section id="features">
         <More Card={Card} />
       </section>
+      <section id="why-dogecoin">
+        <WhyDogecoin Card={Card} />
+      </section>
+      <section id="chat-with-dogemax">
+        <ChatWithDogeMax Btn={Btn} />
+      </section>
       <section id="community">
         <JoinCommunity Btn={Btn} />
       </section>
