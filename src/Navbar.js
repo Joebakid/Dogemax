@@ -14,36 +14,28 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   useEffect(() => {
-    // Animate logo on page load
     gsap.fromTo(
       logoRef.current,
       { opacity: 0, y: -50 },
       { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
     );
 
-    // Animate menu icon on page load
     gsap.fromTo(
       menuIconRef.current,
       { opacity: 0, scale: 0.5 },
       { opacity: 1, scale: 1, duration: 0.8, ease: "elastic.out(1, 0.5)", delay: 0.5 }
     );
 
-    // Animate nav links on page load
     gsap.fromTo(
       navLinksRef.current,
       { opacity: 0, x: -30 },
@@ -62,7 +54,7 @@ function Navbar() {
     <nav className={isScrolled ? "scrolled" : ""}>
       <div className="container">
         <div className="nav-container">
-          <a ref={logoRef} className="logo" href="link">
+          <a ref={logoRef} className="logo" href="#home">
             Dogemax
           </a>
           <div
@@ -77,18 +69,23 @@ function Navbar() {
           <ul
             className={`list-nav-container ${isMenuOpen ? "active" : ""}`}
           >
-            {["Home", "About Us", "Feature", "Community"].map((text, index) => (
-              <li key={text}>
+            {[
+              { text: "Home", id: "home" },
+              { text: "About Us", id: "about-us" },
+              { text: "Features", id: "features" },
+              { text: "Community", id: "community" },
+            ].map((link, index) => (
+              <li key={link.text}>
                 <a
                   ref={(el) => (navLinksRef.current[index] = el)}
-                  href="link"
+                  href={`#${link.id}`}
                 >
-                  {text}
+                  {link.text}
                 </a>
               </li>
             ))}
           </ul>
-          <a className="ask-link" href="link">
+          <a className="ask-link" href="#contact">
             Ask Dogemax
           </a>
         </div>

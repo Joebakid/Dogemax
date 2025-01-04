@@ -85,9 +85,7 @@ function Footer() {
             </svg>
           </a>
         </div>
-        <p>
-          Copyright © 2024 DogeMax. All rights reserved. info@basedblualien.com
-        </p>
+        <p>Copyright © 2024 DogeMax.</p>
       </div>
     </footer>
   );

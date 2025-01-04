@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Header from "./Header";
-import "./App.css";
 import WhatIsDogemax from "./WhatIsDogemax";
 import More from "./More";
 import WhyDogecoin from "./WhyDogecoin";
 import ChatWithDogeMax from "./ChatWithDogeMax";
 import JoinCommunity from "./JoinCommunity";
 import Footer from "./Footer";
+import "./App.css";
 
 function App() {
   function Card({ icon, text }) {
@@ -18,6 +18,7 @@ function App() {
       </div>
     );
   }
+
   function Btn({ text, href }) {
     return (
       <a className="btn" href={href}>
@@ -25,15 +26,22 @@ function App() {
       </a>
     );
   }
+
   return (
     <div className="App">
       <Navbar />
-      <Header Btn={Btn} />
-      <WhatIsDogemax />
-      <More Card={Card} />
-      <WhyDogecoin Card={Card} />
-      <ChatWithDogeMax Btn={Btn} />
-      <JoinCommunity Btn={Btn} />
+      <section id="home">
+        <Header Btn={Btn} />
+      </section>
+      <section id="about-us">
+        <WhatIsDogemax />
+      </section>
+      <section id="features">
+        <More Card={Card} />
+      </section>
+      <section id="community">
+        <JoinCommunity Btn={Btn} />
+      </section>
       <Footer />
     </div>
   );
