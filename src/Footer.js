@@ -43,7 +43,7 @@ function Footer() {
               </defs>
             </svg>
           </a>
-          <a href="link">
+          <a target="_blank" rel="noreferrer" href="https://t.me/dogemax_ai">
             <svg
               width="54"
               height="54"
