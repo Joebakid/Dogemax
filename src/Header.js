@@ -60,14 +60,15 @@ function Header({ Btn }) {
               companion
             </h1>
             <p className="header-text">
-             Your fun, knowledgeable guide to exploring and thriving in Doge Ecosystem
+              Your fun, knowledgeable guide to exploring and thriving in Doge
+              Ecosystem
             </p>
           </div>
           <div className="unique">
             <img src="/img/unique.png" alt="what makes it unique?" />
           </div>
           <div className="btn-content">
-            <Btn text="Ask Dogemax" />
+            <Btn text="Ask Dogemax" href="https://x.com/dogemax_ai" />
           </div>
           <div className="memecoin-img">
             <img

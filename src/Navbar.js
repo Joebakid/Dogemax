@@ -33,7 +33,13 @@ function Navbar() {
     gsap.fromTo(
       menuIconRef.current,
       { opacity: 0, scale: 0.5 },
-      { opacity: 1, scale: 1, duration: 0.8, ease: "elastic.out(1, 0.5)", delay: 0.5 }
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 0.8,
+        ease: "elastic.out(1, 0.5)",
+        delay: 0.5,
+      }
     );
 
     gsap.fromTo(
@@ -66,9 +72,7 @@ function Navbar() {
             <div className="bar"></div>
             <div className="bar"></div>
           </div>
-          <ul
-            className={`list-nav-container ${isMenuOpen ? "active" : ""}`}
-          >
+          <ul className={`list-nav-container ${isMenuOpen ? "active" : ""}`}>
             {[
               { text: "Home", id: "home" },
               { text: "About Us", id: "about-us" },
@@ -85,7 +89,12 @@ function Navbar() {
               </li>
             ))}
           </ul>
-          <a className="ask-link" href="#contact">
+          <a
+            className="ask-link"
+            target="_blank"
+            href="https://x.com/dogemax_ai"
+           rel="noreferrer"
+          >
             Ask Dogemax
           </a>
         </div>

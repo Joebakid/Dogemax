@@ -5,7 +5,11 @@ function Footer() {
     <footer>
       <div className="container">
         <div className="footer-content">
-          <a href="link">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://x.com/dogemax_ai/status/1875713416268054825?t=8AWBGN0IA8ZRmN3NBzX1bA&s=19"
+          >
             <svg
               width="54"
               height="54"

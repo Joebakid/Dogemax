@@ -91,7 +91,7 @@ function ChatWithDogeMax({ Btn }) {
               Your Personal Dogecoin Guru{" "}
             </h3>
           </div>
-          <Btn text="Ask Dogemax" />
+          <Btn href="https://x.com/dogemax_ai/status/1875713416268054825?t=8AWBGN0IA8ZRmN3NBzX1bA&s=19" text="Ask Dogemax" />
         </div>
         <div className="unique">
           <img

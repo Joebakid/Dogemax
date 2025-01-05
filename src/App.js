@@ -21,7 +21,7 @@ function App() {
 
   function Btn({ text, href }) {
     return (
-      <a className="btn" href={href}>
+      <a target="_bank" className="btn" href={href}>
         {text}
       </a>
     );
