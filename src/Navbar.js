@@ -88,12 +88,23 @@ function Navbar() {
                 </a>
               </li>
             ))}
+            {/* Add the "Ask Dogemax" link to the hamburger menu */}
+            <li>
+              <a
+                className="ask-link-hamburger"
+                target="_blank"
+                href="https://x.com/dogemax_ai"
+                rel="noreferrer"
+              >
+                Ask Dogemax
+              </a>
+            </li>
           </ul>
           <a
-            className="ask-link"
+            className="ask-link desktop"
             target="_blank"
             href="https://x.com/dogemax_ai"
-           rel="noreferrer"
+            rel="noreferrer"
           >
             Ask Dogemax
           </a>

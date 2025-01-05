@@ -88,7 +88,8 @@ nav a {
   font-weight: bold;
 }
 
-.ask-link {
+.ask-link,
+.ask-link-hamburger {
   text-decoration: none;
   color: white;
   background: #6cadfb;
@@ -99,6 +100,10 @@ nav a {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+}
+
+.ask-link-hamburger {
+  display: none;
 }
 
 .ask-link:hover {
@@ -415,6 +420,11 @@ footer p {
   }
 
   .more-title {
+    text-align: center;
+  }
+
+  .ask-link-hamburger {
+    display: block;
     text-align: center;
   }
 }
