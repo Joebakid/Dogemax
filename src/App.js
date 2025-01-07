@@ -8,6 +8,7 @@ import ChatWithDogeMax from "./ChatWithDogeMax";
 import JoinCommunity from "./JoinCommunity";
 import Footer from "./Footer";
 import "./App.css";
+import TokenAllocationChart from "./TokenAllocationChart";
 
 function App() {
   function Card({ icon, text }) {
@@ -35,6 +36,9 @@ function App() {
       </section>
       <section id="about-us">
         <WhatIsDogemax />
+      </section>
+      <section>
+        <TokenAllocationChart />
       </section>
       <section id="features">
         <More Card={Card} />
