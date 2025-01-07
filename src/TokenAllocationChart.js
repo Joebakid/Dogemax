@@ -58,6 +58,9 @@ const TokenAllocationChart = () => {
       </h3>
       <Pie data={data} options={options} />
       <p style={{ textAlign: "center", color: "#A6C8FF", marginTop: "10px" }}>
+        40% Sale @ $0.0001
+      </p>
+      <p style={{ textAlign: "center", color: "#A6C8FF", marginTop: "10px" }}>
         1 Billion Total Token Supply
       </p>
     </div>
