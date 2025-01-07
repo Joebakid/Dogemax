@@ -11,11 +11,13 @@
   font-family: "Urbanist", sans-serif;
   font-weight: 400;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #030133;
   background-image: url("/public/img/spiral.png");
+  overflow-x: hidden;
 }
 
 /* Initially hide elements */
