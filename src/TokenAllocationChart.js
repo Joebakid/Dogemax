@@ -46,11 +46,13 @@ const TokenAllocationChart = () => {
 
   return (
     <div
+      className="container"
       style={{
-        width: "400px",
         margin: "0 auto",
         padding: "20px",
         borderRadius: "8px",
+        overflowX: "auto", // Add horizontal scroll
+        whiteSpace: "nowrap", // Prevent content from wrapping to enable scrolling
       }}
     >
       <h3 style={{ textAlign: "center", color: "#A6C8FF" }}>
