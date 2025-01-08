@@ -66,7 +66,7 @@ const TokenAllocationChart = () => {
         1 Billion Total Token Supply
       </p>
       <p style={{ textAlign: "center", color: "#A6C8FF", marginTop: "10px" }}>
-        Interact with DOGEMAX AI to Earn free Dogemax Token
+        Interact with DOGEMAX AI <br /> to Earn free Dogemax Token
       </p>
     </div>
   );
