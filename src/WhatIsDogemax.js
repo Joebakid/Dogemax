@@ -23,7 +23,7 @@ function WhatIsDogemax() {
 
     tl.fromTo(
       content,
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: -10 },
       { opacity: 1, y: 0, duration: 3, ease: "power2.out" }
     );
 
@@ -33,7 +33,7 @@ function WhatIsDogemax() {
   }, []);
 
   return (
-    <section ref={sectionRef}>
+    <section ref={sectionRef} className="y-scroll">
       <div className="container">
         <div className="WhatIsDogemax-content" ref={contentRef}>
           <div className="WhatIsDogemax-write-up">
