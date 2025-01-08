@@ -57,7 +57,7 @@ function JoinCommunity({ Btn }) {
             decisions.
           </p>
 
-          <Btn text="Join Community" href="link" />
+          <Btn text="Join Community" href="https://t.me/dogemax_ai" />
         </div>
       </div>
     </section>
