@@ -5,41 +5,46 @@ function Header({ Btn }) {
   useEffect(() => {
     console.log("GSAP animations initialized");
 
-    // Create a GSAP timeline
-    const tl = gsap.timeline({
-      delay: 1, // Add delay for the nav animation to complete
-    });
+    // Remove hidden class after a short delay
+    const container = document.querySelector(".container");
+    container.classList.remove("hidden");
 
-    // Header animations using fromTo
+    const tl = gsap.timeline({ delay: 1 });
+
     tl.fromTo(
       ".header-title",
-      { opacity: 0, y: -50 }, // Starting state
-      { opacity: 1, y: 0, duration: 1, ease: "power3.out" } // Ending state
+      { opacity: 0, y: -50 },
+      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
     )
       .fromTo(
         ".header-text",
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
-        "-=0.5" // Overlap the animation by 0.5 seconds
+        "-=0.5"
       )
       .fromTo(
         ".btn-content",
         { opacity: 0, scale: 0.8 },
         { opacity: 1, scale: 1, duration: 0.8, ease: "back.out(1.7)" },
-        "-=0.3" // Slight overlap
+        "-=0.3"
       )
       .fromTo(
-        ".memecoin-dogemax",
-        { opacity: 0, x: -50 },
-        { opacity: 1, x: 0, duration: 1, stagger: 0.3, ease: "power3.out" },
+        ".memecoin-dogemax-one",
+       { opacity: 0, scale: 0.8 },
+        { opacity: 1, scale: 1, duration: 0.8, ease: "back.out(1.7)" },
         "-=0.5"
       )
       .fromTo(
         ".unique",
-        { opacity: 0, scale: 0.5 },
+        { opacity: 0, scale: 0.8 },
         { opacity: 1, scale: 1, duration: 0.8, ease: "back.out(1.7)" },
         "-=0.5"
       );
+
+    return () => {
+      // Cleanup to prevent potential memory leaks
+      tl.kill();
+    };
   }, []);
 
   return (
@@ -48,7 +53,7 @@ function Header({ Btn }) {
         <section>
           <div className="memecoin-img">
             <img
-              className="memecoin-dogemax"
+              className=".memecoin-dogemax memecoin-dogemax-one"
               src="/img/memecoin-img.png"
               alt="is dogemax a memecoin?"
             />
@@ -72,7 +77,7 @@ function Header({ Btn }) {
           </div>
           <div className="memecoin-img">
             <img
-              className="memecoin-dogemax"
+              className="memecoin-dogemax memecoin-dogemax-two"
               src="/img/memecoin-img.png"
               alt="is dogemax a memecoin?"
             />
