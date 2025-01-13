@@ -107,6 +107,7 @@ nav a {
 
 .ask-link-hamburger {
   display: none;
+  opacity: 1;
 }
 
 .ask-link:hover {
@@ -134,8 +135,6 @@ nav a {
 section {
   padding: 50px 0;
 }
-
-
 
 header {
   /* height: 100vh; */
@@ -429,7 +428,7 @@ footer p {
   }
 
   .ask-link-hamburger {
-    display: block;
+    display: flex;
     text-align: center;
   }
 }

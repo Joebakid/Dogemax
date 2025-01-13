@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import { Pie } from "react-chartjs-2";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-
+gsap.registerPlugin(ScrollTrigger);
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const TokenAllocationChart = () => {
+  const sectionRef = useRef(null);
+  const contentRef = useRef(null);
+
   const data = {
     labels: ["Sale", "Airdrop", "Team", "Reserve"],
     datasets: [
@@ -44,8 +49,39 @@ const TokenAllocationChart = () => {
     },
   };
 
+ useEffect(() => {
+  const section = sectionRef.current;
+  const content = contentRef.current;
+
+  if (!section || !content) {
+    console.error("Section or Content not found");
+    return;
+  }
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: section,
+      start: "top 80%", // Adjust start position
+      end: "bottom 20%", // Adjust end position
+      scrub: true,
+    },
+  });
+
+  tl.fromTo(
+    content,
+    { opacity: 0, y: -10 },
+    { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+  );
+
+  return () => {
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  };
+}, []);
+
+
   return (
     <div
+      ref={sectionRef}
       className="container"
       style={{
         margin: "0 auto",

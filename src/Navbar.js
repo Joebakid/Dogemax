@@ -107,21 +107,21 @@ function Navbar() {
               <a
                 className="ask-link-hamburger"
                 target="_blank"
-                href="https://x.com/dogemax_ai"
+                href="https://doge.ordinalswallet.com/collection/tap-DOGEMAX"
                 rel="noreferrer"
               >
-                Ask Dogemax
+                Trade Dogemax
               </a>
             </li>
           </ul>
           <a
             className="ask-link desktop"
             target="_blank"
-            href="https://x.com/dogemax_ai"
+            href="https://doge.ordinalswallet.com/collection/tap-DOGEMAX"
             rel="noreferrer"
             ref={btnAnimation}
           >
-            Ask Dogemax
+            Trade Dogemax
           </a>
         </div>
       </div>
