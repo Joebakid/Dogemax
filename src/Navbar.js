@@ -110,7 +110,7 @@ function Navbar() {
                 href="https://doge.ordinalswallet.com/collection/tap-DOGEMAX"
                 rel="noreferrer"
               >
-                Trade Dogemax
+               Buy Dogemax
               </a>
             </li>
           </ul>
